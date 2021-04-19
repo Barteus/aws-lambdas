@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#pycharm configuration files
+.idea
+
+#arifacts
+code.zip
+test/event.json
+test/output.json
