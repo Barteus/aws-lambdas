@@ -6,16 +6,14 @@ Terraform Registry.
 
 In production environment always use backends! For simulation this part was excluded intentionally.
 
-Deploy: 
-`terraform init`
-`terraform apply`
-Destroy:
-`terraform destroy`
+Deploy - `terraform apply`
+
+Destroy - `terraform destroy`
 
 PROS:
 
 - support for simple to complex scenarios including layers deployment
-- declarative approach where you define a state you want to accive
+- declarative approach where you define a state you want to archive
 - supports waiting for resources being created
 - allows creation of resources
 - allows multi-cloud approach and can create other resources (i.e. Kubernetes resources)
@@ -23,7 +21,7 @@ PROS:
 
 CONS:
 
-- does not support lambda execution/debugging 
+- does not support lambda execution/debugging
 - module is still fresh and has some unresolved issues
 - supports Python 3.6 or higher (for Python 2.7 build code and provide as artifact)
 
