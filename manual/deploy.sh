@@ -4,10 +4,10 @@ aws iam attach-role-policy --role-name bpk-lambda-role --policy-arn arn:aws:iam:
 aws iam attach-role-policy --role-name bpk-lambda-role --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess
 
 rm code.zip
-zip -X -r code.zip src
+zip -X -r code.zip ../code
 
 # Read README why used!
 sleep 10
 
 ROLE_ARN=$(aws iam get-role --role-name bpk-lambda-role | jq -r .Role.Arn)
-aws lambda create-function --function-name bpk-lambda-function --zip-file fileb://code.zip --handler src.handle.lambda_handler --runtime python3.8 --role $ROLE_ARN
+aws lambda create-function --function-name bpk-lambda-function --zip-file fileb://code.zip --handler code.handle.lambda_handler --runtime python3.8 --role $ROLE_ARN

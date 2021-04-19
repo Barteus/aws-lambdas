@@ -135,3 +135,10 @@ dmypy.json
 code.zip
 test/event.json
 test/output.json
+
+#terraform
+.terraform
+.terraform.lock.hcl
+builds
+*.tfstate
+*.tfstate.backup

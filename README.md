@@ -19,15 +19,20 @@ application is larger then 50MB - direct upload will not work. Use S3 bucket as 
 
 Common for all lambdas invoke script was placed in folder `test`
 To test lambdas execution create a bucket, place a file, add metadata and based on `event.json.tpl` create `event.json`
-with filled values.
+with filled values. Lambda invoke script is in `invoke.sh`
+
+Application is placed in `code` folder and will be used by all approaches. Application based on file in S3 bucket
+returns its metadata using boto3 library.
 
 Each approach contains:
 
 - simple application code, which returns file's metadata
-- deploy, destroy scripts
-- invoke lambda script
+- deploy, destroy scripts or README commands to run (i.e. for terraform)
 - README with description of PRO/CONS and some challenges
 
 ### Explored methods by folder:
 
-- `manual` - python code, bash scripts, aws cli
+- `manual` - bash scripts, aws cli
+- `terraform` - terraform scripts
+- TODO `sam` - AWS SAM deployment
+- TODO `serverless` - serverless framework configuration files
