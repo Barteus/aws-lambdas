@@ -25,6 +25,7 @@ PROS:
 - allows lambda function execution in local simulated environment - `sls invoke local`
 - supports CICD, Secrets and Monitoring in "Pro" version (free for single developers, paid for teams)
 - declarative approach where you define a state you want to archive
+- allows file filtering which should be a part of deployed application
 - allows creation of resources with CloudFormation yamls
 - history of all deployments is kept in form of CloudFormation stacks
 - allows multi-cloud approach
@@ -40,3 +41,4 @@ CONS:
 - enforcing some conventions on lambda functions (less configurable)
 - advanced resource customizations has to be written in CloudFormation or found in plugins
 - issues debugging is cumbersome
+- adds not needed files in default configuration of serverless app (fixed using including/excluding in example)

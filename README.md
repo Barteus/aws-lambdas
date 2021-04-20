@@ -15,7 +15,7 @@ This depeneds on the size of lambda - generally it is better to use Zip packages
 using Zip packages - over 250MB (including dependencies, all uncompressed) you can use only Docker Images. If
 application is larger then 50MB - direct upload will not work. Use S3 bucket as an artifact storage for deployment.
 
-## Approaches
+## Approaches - deployment tools
 
 Common for all lambdas invoke script was placed in folder `test`
 To test lambdas execution create a bucket, place a file, add metadata and based on `event.json.tpl` create `event.json`
@@ -26,7 +26,6 @@ returns its metadata using boto3 library.
 
 Each approach contains:
 
-- simple application code, which returns file's metadata
 - deploy, destroy scripts or README commands to run (i.e. for terraform)
 - README with description of PRO/CONS and some challenges
 

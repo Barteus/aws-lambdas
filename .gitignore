@@ -130,15 +130,3 @@ dmypy.json
 
 #pycharm configuration files
 .idea
-
-#arifacts
-code.zip
-test/event.json
-test/output.json
-
-#terraform
-.terraform
-.terraform.lock.hcl
-builds
-*.tfstate
-*.tfstate.backup
