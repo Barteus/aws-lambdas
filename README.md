@@ -37,5 +37,23 @@ Each approach contains:
 - **TODO** `sam` - AWS SAM deployment
 - `serverless` - serverless framework configuration files
 
+### Alternatives - not explored
+
+- Zappa
+- ClaudiaJS
+- Heroku
+- AWS CDK (Cloud Development Kit)
+- Up
+- Architect
+
 ## Summary
+
 **TODO**
+
+## Links
+
+- https://docs.aws.amazon.com/cli/latest/reference/
+- https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
+- https://www.serverless.com/learn/comparisons/
+- https://aws.amazon.com/blogs/opensource/24-open-source-tools-for-the-serverless-developer-part-1/
+- https://registry.terraform.io/modules/terraform-aws-modules/lambda/aws/latest
