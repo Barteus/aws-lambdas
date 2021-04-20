@@ -1,4 +1,4 @@
-# aws-lambdas
+# aws-lambdas - WORK IN PROGRESS
 
 This project is showing few ways to deploy lambda. Each way is a bit different and can be used for different purposes.
 
