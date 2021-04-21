@@ -33,7 +33,7 @@ Each approach contains:
 
 - `manual` - bash scripts, aws cli
 - `terraform` - terraform scripts
-- **TODO** `sam` - AWS SAM deployment
+- `sam` - AWS SAM deployment
 - `serverless` - serverless framework configuration files
 
 ### Alternatives - not explored
