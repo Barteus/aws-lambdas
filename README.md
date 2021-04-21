@@ -52,7 +52,7 @@ Each approach contains:
 
 ## Summary
 
-After exploring 4 different approaches to lambda deployment each has its own merits and driver to consider.
+After exploring 4 different approaches to lambda deployment each has its own merits and drivers to consider.
 
 ### Manual
 
