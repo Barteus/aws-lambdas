@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  BPK Function Description
+
+  Sample SAM Template for sam
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  BpkFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ../code/
+      Handler: handle.lambda_handler
+      Runtime: python3.8
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - 's3:*'
+              Resource: 'arn:aws:s3:::*'
+Outputs:
+  BpkFunction:
+    Description: "Deployed Lambda Function ARN"
+    Value: !GetAtt BpkFunction.Arn
+  BpkFunctionIamRole:
+    Description: "Implicit IAM Role created for Deployed Lambda Function"
+    Value: !GetAtt BpkFunctionRole.Arn

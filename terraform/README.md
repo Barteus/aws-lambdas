@@ -18,6 +18,7 @@ PROS:
 - allows creation of resources
 - allows multi-cloud approach and can create other resources (i.e. Kubernetes resources)
 - supports both types of deployment which additional code (Zip/Docker Image)
+- support for multiple environments in form of workspaces
 
 CONS:
 
