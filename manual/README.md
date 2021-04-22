@@ -6,7 +6,7 @@ The implementation is using Lambda Zip direct upload which is fast to develop by
 
 ## Pros:
 
-- simple and fast to implement
+- simple and easy to understand
 - great for education purposes
 
 ## Cons:
