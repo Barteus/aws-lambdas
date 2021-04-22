@@ -1,4 +1,4 @@
-# Deploy lambda - manual + aws cli
+# Deploy lambda - aws cli + bash
 
 This is version which does not require knowledge of any additional tools other than bash and aws cli.
 
