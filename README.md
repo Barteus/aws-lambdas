@@ -27,7 +27,8 @@ To test lambdas execution create a bucket, place a file, add metadata and based 
 with filled values. Lambda invoke script is in `invoke.sh`
 
 Application is placed in `code` folder and will be used by all approaches. Application based on file in S3 bucket
-returns its metadata using boto3 library.
+returns its metadata using boto3 library. One of the common practises while deploying lambda is to store some common
+like files and libraries in layer shared between different lambda functions. Code for such layer was placed in `layer`
 
 Each approach contains:
 
