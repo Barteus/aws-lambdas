@@ -8,6 +8,8 @@ develop advanced scenarios.
 Application is a form of grouping the functions, dbs and all AWS resources used by it. This allows monitoring and
 management of whole application at once. Comes in handy for bigger applications and robust systems.
 
+Implementation of Layer was added to showcase how easy it is to add one. 
+
 Folder `tests` was left without changes after generation to show the structure which was generated. During project
 initialization template is selected based on which structure is created. This is an opportunity for bigger companies to
 implement all company best practises on every new AWS SAM project created from get-go. Be aware of the downside that

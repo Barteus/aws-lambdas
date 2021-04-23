@@ -11,12 +11,22 @@ Globals:
     Timeout: 3
 
 Resources:
+  MyLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      ContentUri: ../layer
+      CompatibleRuntimes:
+        - python3.6
+    Metadata:
+      BuildMethod: python3.7
   BpkFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: ../code/
       Handler: handle.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.7
+      Layers:
+        - !Ref MyLayer
       Policies:
         - Version: '2012-10-17'
           Statement:
