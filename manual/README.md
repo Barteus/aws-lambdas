@@ -1,4 +1,4 @@
-# Deploy lambda - manual + aws cli
+# Deploy lambda - aws cli + bash
 
 This is version which does not require knowledge of any additional tools other than bash and aws cli.
 
@@ -6,7 +6,7 @@ The implementation is using Lambda Zip direct upload which is fast to develop by
 
 ## Pros:
 
-- simple and fast to implement
+- simple and easy to understand
 - great for education purposes
 
 ## Cons:
