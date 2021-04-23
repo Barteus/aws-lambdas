@@ -4,11 +4,27 @@ There are a few ways to deploy lambda using terraform. We can use basic AWS prov
 ourselves using CICD pipeline. I really like a quick approach using one of the officially approved modules from
 Terraform Registry.
 
+Module description - https://registry.terraform.io/modules/terraform-aws-modules/lambda/aws/latest
+
+Module was created using multiple aws resources to simplify lambda build and deployment process. Building process
+supports both local and in-Docker building for compatibility. Lambda deployment in provided example looks simple, but
+all magic is done underneath the hood. By default, code in given source path is zipped and placed in `builds` folder.
+Then lambda is created using direct Zip upload. If you want to use S3 as artifact storage, this is possible with this
+module - example code are directly in documentation. Thanks to hashing function - code is replaced in lambda only when
+it changes.
+
 In production environment always use backends! For simulation this part was excluded intentionally.
 
-Deploy - `terraform apply`
+```bash
+#init terraform modules
+terraform init
 
-Destroy - `terraform destroy`
+#deploy
+terraform apply
+
+#destroy
+terraform destroy
+```
 
 PROS:
 
@@ -17,7 +33,7 @@ PROS:
 - supports waiting for resources being created
 - allows creation of resources
 - allows multi-cloud approach and can create other resources (i.e. Kubernetes resources)
-- supports both types of deployment which additional code (Zip/Docker Image)
+- supports both artifact types (Zip/Docker Image)
 - support for multiple environments in form of workspaces
 
 CONS:

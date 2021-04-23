@@ -66,14 +66,13 @@ Recommended: education only
 
 This approach has few versions of implementation. The one implemented in this repository was selected because of short
 form and coverage of most important features. It does not support debugging, logging or local execution - features which
-might come in handy especially when creating lambda with bigger codebase (lambda doing more than calling one or two
-boto3 methods). Terraform focus mainly on deployment part.
+might come in handy. Terraform focus mainly on deployment part.
 
 Recommended:
 
 - selected IaC is Terraform
 - multi-cloud environment
-- do not care about lambda development helpers (i.e. simple lambdas)
+- do not care about lambda development helpers - aws cli can be a replacement for most of them
 
 ### Serverless
 
@@ -88,6 +87,7 @@ Recommended:
 - there are plugins available for all needed extensions
 - focus on tool to develop lambdas (incl. local execution)
 - multi-cloud environments
+- CloudFormation as IaC tool
 
 ### AWS SAM
 
@@ -99,10 +99,10 @@ easily extracted form AWS SAM cli.
 
 Recommended:
 
-- when AWS vendor lock-in is an option
 - deployment of multiple lambdas as a part of bigger application
 - leverage of SAM application repository (public and private)
 - focus on tool to develop lambdas (incl. local execution)
+- CloudFormation as IaC tool
 
 ## Links
 
