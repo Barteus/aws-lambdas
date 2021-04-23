@@ -23,6 +23,10 @@ package:
     - node_modules/**
     - ./*.json
 
+layers:
+  myLayer:
+    path: ../layer
+
 functions:
   hello:
     handler: code/handle.lambda_handler

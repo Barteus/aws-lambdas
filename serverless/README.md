@@ -10,17 +10,25 @@ Tool has more benefits when used with "Pro" version by providing Monitoring and 
 triggers is also really swift - great for prototyping. when used in complex production scenarios there might be a need
 for more advanced customizations, then there is a need to use plugins and CloudFormation scripts in serverless.yaml
 
+Support for layers is also provided and is quite simple to configure.
+
 The artifacts that are useful to check what was deployed are stored in `.serverless` folder. There is both the zip file
 to upload and CloudFormation templates to create and update values. Be aware that are 2 different templates - one for
 creation and one for update.
 
-Create deployment - `sls create`
+```bash
+#Create deployment
+sls create
 
-Deploy - `sls deploy`
+#Deploy
+sls deploy
 
-Invoke lambda - `sls invoke -f hello -p ../test/event.json`
+#Invoke lambda
+sls invoke -f hello -p ../test/event.json
 
-Destroy - `sls remove`
+#Destroy
+sls remove
+```
 
 PROS:
 
