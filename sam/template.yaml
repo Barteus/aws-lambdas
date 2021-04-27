@@ -16,7 +16,7 @@ Resources:
     Properties:
       ContentUri: ../layer
       CompatibleRuntimes:
-        - python3.6
+        - python3.7
     Metadata:
       BuildMethod: python3.7
   BpkFunction:
